@@ -90,7 +90,8 @@ class robot:
         ##    - The noise component should be a random value between [-1.0, 1.0)*measurement_noise
         ##    - Feel free to use the function self.rand() to help calculate this noise component
         ##    - It may help to reference the `move` function for noise calculation
-            noise = self.rand() * self.measurement_noise
+ ##    - It may help to reference the `move` function for noise calculation
+           noise = self.rand() * self.measurement_noise
             dx += noise
             dy += noise
         ## 3. If either of the distances, dx or dy, fall outside of the internal var, measurement_range
